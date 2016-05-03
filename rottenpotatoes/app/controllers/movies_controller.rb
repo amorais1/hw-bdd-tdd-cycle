@@ -23,7 +23,6 @@ class MoviesController < ApplicationController
     else
       @movies=Movie.where(director: @list)
     end
-    #movieList= @movie.find_all_by_director  
   end
   def index
     sort = params[:sort] || session[:sort]
